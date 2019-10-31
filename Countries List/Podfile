@@ -1,0 +1,3 @@
+target 'Countries List' do
+	pod 'Sourcery'
+end
