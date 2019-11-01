@@ -13,6 +13,7 @@
 		07F405EB236B399A00AE6981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F405E9236B399A00AE6981 /* Main.storyboard */; };
 		07F405ED236B39A000AE6981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F405EC236B39A000AE6981 /* Assets.xcassets */; };
 		07F405F0236B39A000AE6981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F405EE236B39A000AE6981 /* LaunchScreen.storyboard */; };
+		07F405F8236C92C000AE6981 /* MainScene in Resources */ = {isa = PBXBuildFile; fileRef = 07F405F7236C92BF00AE6981 /* MainScene */; };
 		A2A6DFC27AE6F15BBF9D68CE /* libPods-Countries List.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A5D5F4F08DCEB0AB1343F /* libPods-Countries List.a */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		07F405EC236B39A000AE6981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F405EF236B39A000AE6981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07F405F1236B39A000AE6981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		07F405F7236C92BF00AE6981 /* MainScene */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainScene; sourceTree = "<group>"; };
 		23AFFC76F1F5777B1EC68BEE /* Pods-Countries List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries List.debug.xcconfig"; path = "Target Support Files/Pods-Countries List/Pods-Countries List.debug.xcconfig"; sourceTree = "<group>"; };
 		431A5D5F4F08DCEB0AB1343F /* libPods-Countries List.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countries List.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F274E7DF74F51FAF6C7C6CFA /* Pods-Countries List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries List.release.xcconfig"; path = "Target Support Files/Pods-Countries List/Pods-Countries List.release.xcconfig"; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				07F405E3236B399A00AE6981 /* AppDelegate.swift */,
 				07F405E5236B399A00AE6981 /* SceneDelegate.swift */,
 				07F405E7236B399A00AE6981 /* ViewController.swift */,
+				07F405F7236C92BF00AE6981 /* MainScene */,
 				07F405E9236B399A00AE6981 /* Main.storyboard */,
 				07F405EC236B39A000AE6981 /* Assets.xcassets */,
 				07F405EE236B39A000AE6981 /* LaunchScreen.storyboard */,
@@ -88,7 +91,6 @@
 				23AFFC76F1F5777B1EC68BEE /* Pods-Countries List.debug.xcconfig */,
 				F274E7DF74F51FAF6C7C6CFA /* Pods-Countries List.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -151,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07F405F8236C92C000AE6981 /* MainScene in Resources */,
 				07F405F0236B39A000AE6981 /* LaunchScreen.storyboard in Resources */,
 				07F405ED236B39A000AE6981 /* Assets.xcassets in Resources */,
 				07F405EB236B399A00AE6981 /* Main.storyboard in Resources */,
