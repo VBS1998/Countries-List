@@ -1,0 +1,17 @@
+// TODO: Remove this Sourcery mark above
+import UIKit
+
+protocol {{argument.className}}ViewControllerDelegate: AnyObject {
+}
+
+final class {{argument.className}}ViewController: CoordenableViewController {
+}
+
+extension {{argument.className}}ViewController: UITableViewDataSource {
+}
+
+extension {{argument.className}}ViewController: UITableViewDelegate {
+}
+
+extension {{argument.className}}ViewController: MODELTableViewCellDelegate {
+}

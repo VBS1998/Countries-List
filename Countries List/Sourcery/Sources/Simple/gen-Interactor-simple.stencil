@@ -1,0 +1,12 @@
+// TODO: Remove this Sourcery mark above
+import UIKit
+
+protocol {{argument.className}}InteractorProtocol {
+}
+
+protocol {{argument.className}}InteractorDelegate {
+}
+
+final class {{argument.className}}Interactor: {{argument.className}}InteractorProtocol {
+}
+

@@ -1,0 +1,14 @@
+// TODO: Remove this Sourcery mark above
+import UIKit
+
+protocol {{argument.className}}PresenterProtocol {
+}
+
+protocol {{argument.className}}PresenterDelegate {
+}
+
+final class {{argument.className}}Presenter: {{argument.className}}PresenterProtocol {
+}
+
+extension {{argument.className}}Presenter: {{argument.className}}PresenterDelegate {
+}
