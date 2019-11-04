@@ -2,16 +2,19 @@
 import UIKit
 
 protocol {{argument.className}}ViewControllerDelegate: AnyObject {
+
 }
 
 final class {{argument.className}}ViewController: CoordenableViewController {
-}
 
-extension {{argument.className}}ViewController: UITableViewDataSource {
-}
+    var coordinator : {{argument.className}}Coordinator = {{argument.className}}Coordinator()
+    
+    var interactor : {{argument.className}}Interactor!
+    
+    override func viewDidLoad() {
+        interactor = {{argument.className}}Interactor()
+        interactor.presenter = {{argument.className}}Presenter()
+        interactor.presenter?.viewController = self
+    }
 
-extension {{argument.className}}ViewController: UITableViewDelegate {
-}
-
-extension {{argument.className}}ViewController: MODELTableViewCellDelegate {
 }

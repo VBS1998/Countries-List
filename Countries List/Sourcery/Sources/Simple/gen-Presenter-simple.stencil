@@ -1,13 +1,13 @@
 // TODO: Remove this Sourcery mark above
 import UIKit
 
-protocol {{argument.className}}PresenterProtocol {
-}
-
 protocol {{argument.className}}PresenterDelegate {
 }
 
 final class {{argument.className}}Presenter: {{argument.className}}PresenterProtocol {
+
+    weak var viewController : {{argument.className}}ViewController?
+
 }
 
 extension {{argument.className}}Presenter: {{argument.className}}PresenterDelegate {
