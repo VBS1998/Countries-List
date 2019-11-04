@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0727A86023707ECF001C7436 /* CountriesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A85D23707ECF001C7436 /* CountriesListInteractor.swift */; };
+		0727A86123707ECF001C7436 /* CountriesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A85E23707ECF001C7436 /* CountriesListPresenter.swift */; };
+		0727A86223707ECF001C7436 /* CountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A85F23707ECF001C7436 /* CountriesListViewController.swift */; };
 		07F405E4236B399A00AE6981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405E3236B399A00AE6981 /* AppDelegate.swift */; };
 		07F405E6236B399A00AE6981 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405E5236B399A00AE6981 /* SceneDelegate.swift */; };
 		07F405E8236B399A00AE6981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405E7236B399A00AE6981 /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0727A85D23707ECF001C7436 /* CountriesListInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListInteractor.swift; sourceTree = "<group>"; };
+		0727A85E23707ECF001C7436 /* CountriesListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListPresenter.swift; sourceTree = "<group>"; };
+		0727A85F23707ECF001C7436 /* CountriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListViewController.swift; sourceTree = "<group>"; };
 		07F405E0236B399A00AE6981 /* Countries List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countries List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F405E3236B399A00AE6981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F405E5236B399A00AE6981 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		0727A85C23707ECF001C7436 /* CountriesListScene */ = {
+			isa = PBXGroup;
+			children = (
+				0727A85D23707ECF001C7436 /* CountriesListInteractor.swift */,
+				0727A85E23707ECF001C7436 /* CountriesListPresenter.swift */,
+				0727A85F23707ECF001C7436 /* CountriesListViewController.swift */,
+			);
+			path = CountriesListScene;
+			sourceTree = "<group>";
+		};
 		07F405D7236B399A00AE6981 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +104,7 @@
 				07F405E3236B399A00AE6981 /* AppDelegate.swift */,
 				07F405E5236B399A00AE6981 /* SceneDelegate.swift */,
 				07F405E7236B399A00AE6981 /* ViewController.swift */,
+				0727A85C23707ECF001C7436 /* CountriesListScene */,
 				07F405F9236F4A8400AE6981 /* MainScene */,
 				07F405EC236B39A000AE6981 /* Assets.xcassets */,
 				07F405EE236B39A000AE6981 /* LaunchScreen.storyboard */,
@@ -223,7 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F405E8236B399A00AE6981 /* ViewController.swift in Sources */,
+				0727A86223707ECF001C7436 /* CountriesListViewController.swift in Sources */,
+				0727A86023707ECF001C7436 /* CountriesListInteractor.swift in Sources */,
 				07F40601236F4A8400AE6981 /* MainCoordinator.swift in Sources */,
+				0727A86123707ECF001C7436 /* CountriesListPresenter.swift in Sources */,
 				07F40600236F4A8400AE6981 /* MainPresenter.swift in Sources */,
 				07F405E4236B399A00AE6981 /* AppDelegate.swift in Sources */,
 				07F405E6236B399A00AE6981 /* SceneDelegate.swift in Sources */,
