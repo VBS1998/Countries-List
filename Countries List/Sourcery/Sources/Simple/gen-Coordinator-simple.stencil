@@ -1,0 +1,17 @@
+
+import Foundation
+import UIKit
+
+class {{argument.className}}Coordinator{
+    
+    static func make() -> {{argument.className}}ViewController?{
+        
+        let viewController = UIStoryboard.viewController(of: {{argument.className}}ViewController.self, storyboardId: .{{argument.className}})
+        
+        let coordinator = {{argument.className}}Coordinator()
+        viewController?.coordinator = coordinator
+
+        return viewController
+    }
+    
+}

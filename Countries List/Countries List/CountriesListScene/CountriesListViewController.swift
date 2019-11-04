@@ -8,10 +8,11 @@ protocol CountriesListViewControllerDelegate: AnyObject {
 
 }
 
-final class CountriesListViewController: CoordenableViewController {
+final class CountriesListViewController: UIViewController {
 
     var coordinator : CountriesListCoordinator = CountriesListCoordinator()
     var interactor : CountriesListInteractor!
+    
     override func viewDidLoad() {
         interactor = CountriesListInteractor()
         interactor.presenter = CountriesListPresenter()

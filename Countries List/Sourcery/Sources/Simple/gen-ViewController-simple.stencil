@@ -5,7 +5,7 @@ protocol {{argument.className}}ViewControllerDelegate: AnyObject {
 
 }
 
-final class {{argument.className}}ViewController: CoordenableViewController {
+final class {{argument.className}}ViewController: UIViewController {
 
     var coordinator : {{argument.className}}Coordinator = {{argument.className}}Coordinator()
     
