@@ -12,5 +12,12 @@ final class MainViewController: UIViewController {
     
     var coordinator : MainCoordinator = MainCoordinator()
     
+    var interactor : MainInteractor!
+    
+    override func viewDidLoad() {
+        interactor = MainInteractor()
+        interactor.presenter = MainPresenter()
+        interactor.presenter?.viewController = self
+    }
     
 }

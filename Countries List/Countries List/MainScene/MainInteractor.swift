@@ -9,5 +9,8 @@ protocol MainInteractorDelegate {
 }
 
 final class MainInteractor{
+    
+    var presenter : MainPresenter?
+    
 }
 

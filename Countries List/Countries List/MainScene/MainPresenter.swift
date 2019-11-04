@@ -8,6 +8,7 @@ protocol MainPresenterDelegate {
 }
 
 final class MainPresenter {
+    weak var viewController : MainViewController?
 }
 
 extension MainPresenter: MainPresenterDelegate {
