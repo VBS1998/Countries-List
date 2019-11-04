@@ -4,12 +4,10 @@
 // TODO: Remove this Sourcery mark above
 import UIKit
 
-protocol MainInteractorProtocol {
-}
 
 protocol MainInteractorDelegate {
 }
 
-final class MainInteractor: MainInteractorProtocol {
+final class MainInteractor{
 }
 

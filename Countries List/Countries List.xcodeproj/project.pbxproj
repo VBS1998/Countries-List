@@ -13,7 +13,12 @@
 		07F405EB236B399A00AE6981 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F405E9236B399A00AE6981 /* Main.storyboard */; };
 		07F405ED236B39A000AE6981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F405EC236B39A000AE6981 /* Assets.xcassets */; };
 		07F405F0236B39A000AE6981 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07F405EE236B39A000AE6981 /* LaunchScreen.storyboard */; };
-		07F405F8236C92C000AE6981 /* MainScene in Resources */ = {isa = PBXBuildFile; fileRef = 07F405F7236C92BF00AE6981 /* MainScene */; };
+		07F405FE236F4A8400AE6981 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405FA236F4A8400AE6981 /* MainViewController.swift */; };
+		07F405FF236F4A8400AE6981 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405FB236F4A8400AE6981 /* MainInteractor.swift */; };
+		07F40600236F4A8400AE6981 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405FC236F4A8400AE6981 /* MainPresenter.swift */; };
+		07F40601236F4A8400AE6981 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405FD236F4A8400AE6981 /* MainCoordinator.swift */; };
+		07F40604236F4B1400AE6981 /* UIStoryboard+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F40603236F4B1400AE6981 /* UIStoryboard+Helper.swift */; };
+		07F40606236F4B5800AE6981 /* String+Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F40605236F4B5800AE6981 /* String+Helper.swift */; };
 		A2A6DFC27AE6F15BBF9D68CE /* libPods-Countries List.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 431A5D5F4F08DCEB0AB1343F /* libPods-Countries List.a */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +31,12 @@
 		07F405EC236B39A000AE6981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		07F405EF236B39A000AE6981 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		07F405F1236B39A000AE6981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		07F405F7236C92BF00AE6981 /* MainScene */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MainScene; sourceTree = "<group>"; };
+		07F405FA236F4A8400AE6981 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		07F405FB236F4A8400AE6981 /* MainInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		07F405FC236F4A8400AE6981 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		07F405FD236F4A8400AE6981 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		07F40603236F4B1400AE6981 /* UIStoryboard+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Helper.swift"; sourceTree = "<group>"; };
+		07F40605236F4B5800AE6981 /* String+Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Helper.swift"; sourceTree = "<group>"; };
 		23AFFC76F1F5777B1EC68BEE /* Pods-Countries List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries List.debug.xcconfig"; path = "Target Support Files/Pods-Countries List/Pods-Countries List.debug.xcconfig"; sourceTree = "<group>"; };
 		431A5D5F4F08DCEB0AB1343F /* libPods-Countries List.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Countries List.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F274E7DF74F51FAF6C7C6CFA /* Pods-Countries List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries List.release.xcconfig"; path = "Target Support Files/Pods-Countries List/Pods-Countries List.release.xcconfig"; sourceTree = "<group>"; };
@@ -73,16 +83,37 @@
 		07F405E2236B399A00AE6981 /* Countries List */ = {
 			isa = PBXGroup;
 			children = (
+				07F40605236F4B5800AE6981 /* String+Helper.swift */,
+				07F40602236F4AFD00AE6981 /* UIHelper */,
 				07F405E3236B399A00AE6981 /* AppDelegate.swift */,
 				07F405E5236B399A00AE6981 /* SceneDelegate.swift */,
 				07F405E7236B399A00AE6981 /* ViewController.swift */,
-				07F405F7236C92BF00AE6981 /* MainScene */,
-				07F405E9236B399A00AE6981 /* Main.storyboard */,
+				07F405F9236F4A8400AE6981 /* MainScene */,
 				07F405EC236B39A000AE6981 /* Assets.xcassets */,
 				07F405EE236B39A000AE6981 /* LaunchScreen.storyboard */,
 				07F405F1236B39A000AE6981 /* Info.plist */,
 			);
 			path = "Countries List";
+			sourceTree = "<group>";
+		};
+		07F405F9236F4A8400AE6981 /* MainScene */ = {
+			isa = PBXGroup;
+			children = (
+				07F405FA236F4A8400AE6981 /* MainViewController.swift */,
+				07F405FB236F4A8400AE6981 /* MainInteractor.swift */,
+				07F405FC236F4A8400AE6981 /* MainPresenter.swift */,
+				07F405FD236F4A8400AE6981 /* MainCoordinator.swift */,
+				07F405E9236B399A00AE6981 /* Main.storyboard */,
+			);
+			path = MainScene;
+			sourceTree = "<group>";
+		};
+		07F40602236F4AFD00AE6981 /* UIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				07F40603236F4B1400AE6981 /* UIStoryboard+Helper.swift */,
+			);
+			path = UIHelper;
 			sourceTree = "<group>";
 		};
 		8324A77E6CCAEA7EB5E5E26D /* Pods */ = {
@@ -153,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F405F8236C92C000AE6981 /* MainScene in Resources */,
 				07F405F0236B39A000AE6981 /* LaunchScreen.storyboard in Resources */,
 				07F405ED236B39A000AE6981 /* Assets.xcassets in Resources */,
 				07F405EB236B399A00AE6981 /* Main.storyboard in Resources */,
@@ -193,8 +223,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				07F405E8236B399A00AE6981 /* ViewController.swift in Sources */,
+				07F40601236F4A8400AE6981 /* MainCoordinator.swift in Sources */,
+				07F40600236F4A8400AE6981 /* MainPresenter.swift in Sources */,
 				07F405E4236B399A00AE6981 /* AppDelegate.swift in Sources */,
 				07F405E6236B399A00AE6981 /* SceneDelegate.swift in Sources */,
+				07F40604236F4B1400AE6981 /* UIStoryboard+Helper.swift in Sources */,
+				07F405FF236F4A8400AE6981 /* MainInteractor.swift in Sources */,
+				07F40606236F4B5800AE6981 /* String+Helper.swift in Sources */,
+				07F405FE236F4A8400AE6981 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

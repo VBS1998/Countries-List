@@ -5,16 +5,12 @@
 import UIKit
 
 protocol MainViewControllerDelegate: AnyObject {
+    
 }
 
-final class MainViewController: CoordenableViewController {
-}
-
-extension MainViewController: UITableViewDataSource {
-}
-
-extension MainViewController: UITableViewDelegate {
-}
-
-extension MainViewController: MODELTableViewCellDelegate {
+final class MainViewController: UIViewController {
+    
+    var coordinator : MainCoordinator = MainCoordinator()
+    
+    
 }

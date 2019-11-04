@@ -4,13 +4,10 @@
 // TODO: Remove this Sourcery mark above
 import UIKit
 
-protocol MainPresenterProtocol {
-}
-
 protocol MainPresenterDelegate {
 }
 
-final class MainPresenter: MainPresenterProtocol {
+final class MainPresenter {
 }
 
 extension MainPresenter: MainPresenterDelegate {
