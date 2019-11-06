@@ -4,7 +4,7 @@ import UIKit
 protocol {{argument.className}}InteractorDelegate {
 }
 
-final class {{argument.className}}Interactor: {{argument.className}}InteractorProtocol {
+final class {{argument.className}}Interactor{
     
     var presenter : {{argument.className}}Presenter?
     

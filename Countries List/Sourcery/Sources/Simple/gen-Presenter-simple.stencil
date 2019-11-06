@@ -4,7 +4,7 @@ import UIKit
 protocol {{argument.className}}PresenterDelegate {
 }
 
-final class {{argument.className}}Presenter: {{argument.className}}PresenterProtocol {
+final class {{argument.className}}Presenter{
 
     weak var viewController : {{argument.className}}ViewController?
 

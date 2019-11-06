@@ -15,6 +15,7 @@ class CountriesListCoordinator{
         
         let viewController = UIStoryboard.viewController(of: CountriesListViewController.self, storyboardId: .countriesList)
         
+        
         let coordinator = CountriesListCoordinator()
         viewController?.coordinator = coordinator
 

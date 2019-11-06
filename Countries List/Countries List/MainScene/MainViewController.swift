@@ -20,4 +20,10 @@ final class MainViewController: UIViewController {
         interactor.presenter?.viewController = self
     }
     
+    @IBAction func startButton(_ sender: Any) {
+        guard let navigationController = self.navigationController else {
+            return
+        }
+        coordinator.presentListCountriesScene(from: navigationController)
+    }
 }

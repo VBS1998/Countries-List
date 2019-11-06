@@ -12,6 +12,12 @@
 		0727A86223707ECF001C7436 /* CountriesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A85F23707ECF001C7436 /* CountriesListViewController.swift */; };
 		0727A86423707F9C001C7436 /* CountriesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0727A86323707F9C001C7436 /* CountriesList.storyboard */; };
 		0727A8662370824F001C7436 /* CountriesListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A8652370824F001C7436 /* CountriesListCoordinator.swift */; };
+		0727A86D23709AA7001C7436 /* Continent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A86A23709AA7001C7436 /* Continent.swift */; };
+		0727A86E23709AA7001C7436 /* CountriesMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A86B23709AA7001C7436 /* CountriesMock.swift */; };
+		0727A86F23709AA7001C7436 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A86C23709AA7001C7436 /* Country.swift */; };
+		0727A87223709B48001C7436 /* CountriesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A87123709B48001C7436 /* CountriesListTableViewCell.swift */; };
+		0727A87423709D6D001C7436 /* CountriesListDataFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A87323709D6D001C7436 /* CountriesListDataFlow.swift */; };
+		0727A8762371C8BE001C7436 /* CountriesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0727A8752371C8BE001C7436 /* CountriesListViewModel.swift */; };
 		07F405E4236B399A00AE6981 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405E3236B399A00AE6981 /* AppDelegate.swift */; };
 		07F405E6236B399A00AE6981 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405E5236B399A00AE6981 /* SceneDelegate.swift */; };
 		07F405E8236B399A00AE6981 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F405E7236B399A00AE6981 /* ViewController.swift */; };
@@ -33,6 +39,12 @@
 		0727A85F23707ECF001C7436 /* CountriesListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListViewController.swift; sourceTree = "<group>"; };
 		0727A86323707F9C001C7436 /* CountriesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CountriesList.storyboard; sourceTree = "<group>"; };
 		0727A8652370824F001C7436 /* CountriesListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListCoordinator.swift; sourceTree = "<group>"; };
+		0727A86A23709AA7001C7436 /* Continent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Continent.swift; sourceTree = "<group>"; };
+		0727A86B23709AA7001C7436 /* CountriesMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesMock.swift; sourceTree = "<group>"; };
+		0727A86C23709AA7001C7436 /* Country.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		0727A87123709B48001C7436 /* CountriesListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListTableViewCell.swift; sourceTree = "<group>"; };
+		0727A87323709D6D001C7436 /* CountriesListDataFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesListDataFlow.swift; sourceTree = "<group>"; };
+		0727A8752371C8BE001C7436 /* CountriesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesListViewModel.swift; sourceTree = "<group>"; };
 		07F405E0236B399A00AE6981 /* Countries List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Countries List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		07F405E3236B399A00AE6981 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07F405E5236B399A00AE6981 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,13 +87,35 @@
 		0727A85C23707ECF001C7436 /* CountriesListScene */ = {
 			isa = PBXGroup;
 			children = (
+				0727A8672370993B001C7436 /* ResponseModel */,
+				0727A87023709B26001C7436 /* ViewModel */,
 				0727A85D23707ECF001C7436 /* CountriesListInteractor.swift */,
 				0727A85E23707ECF001C7436 /* CountriesListPresenter.swift */,
 				0727A85F23707ECF001C7436 /* CountriesListViewController.swift */,
+				0727A87323709D6D001C7436 /* CountriesListDataFlow.swift */,
 				0727A8652370824F001C7436 /* CountriesListCoordinator.swift */,
 				0727A86323707F9C001C7436 /* CountriesList.storyboard */,
 			);
 			path = CountriesListScene;
+			sourceTree = "<group>";
+		};
+		0727A8672370993B001C7436 /* ResponseModel */ = {
+			isa = PBXGroup;
+			children = (
+				0727A86A23709AA7001C7436 /* Continent.swift */,
+				0727A86B23709AA7001C7436 /* CountriesMock.swift */,
+				0727A86C23709AA7001C7436 /* Country.swift */,
+			);
+			path = ResponseModel;
+			sourceTree = "<group>";
+		};
+		0727A87023709B26001C7436 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0727A87123709B48001C7436 /* CountriesListTableViewCell.swift */,
+				0727A8752371C8BE001C7436 /* CountriesListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		07F405D7236B399A00AE6981 = {
@@ -248,16 +282,22 @@
 			files = (
 				07F405E8236B399A00AE6981 /* ViewController.swift in Sources */,
 				0727A86223707ECF001C7436 /* CountriesListViewController.swift in Sources */,
+				0727A86E23709AA7001C7436 /* CountriesMock.swift in Sources */,
 				0727A86023707ECF001C7436 /* CountriesListInteractor.swift in Sources */,
+				0727A8762371C8BE001C7436 /* CountriesListViewModel.swift in Sources */,
+				0727A87223709B48001C7436 /* CountriesListTableViewCell.swift in Sources */,
 				07F40601236F4A8400AE6981 /* MainCoordinator.swift in Sources */,
 				0727A86123707ECF001C7436 /* CountriesListPresenter.swift in Sources */,
 				07F40600236F4A8400AE6981 /* MainPresenter.swift in Sources */,
+				0727A87423709D6D001C7436 /* CountriesListDataFlow.swift in Sources */,
 				07F405E4236B399A00AE6981 /* AppDelegate.swift in Sources */,
 				07F405E6236B399A00AE6981 /* SceneDelegate.swift in Sources */,
 				0727A8662370824F001C7436 /* CountriesListCoordinator.swift in Sources */,
 				07F40604236F4B1400AE6981 /* UIStoryboard+Helper.swift in Sources */,
 				07F405FF236F4A8400AE6981 /* MainInteractor.swift in Sources */,
+				0727A86F23709AA7001C7436 /* Country.swift in Sources */,
 				07F40606236F4B5800AE6981 /* String+Helper.swift in Sources */,
+				0727A86D23709AA7001C7436 /* Continent.swift in Sources */,
 				07F405FE236F4A8400AE6981 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

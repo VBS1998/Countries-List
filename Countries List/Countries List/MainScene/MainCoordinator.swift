@@ -23,7 +23,7 @@ class MainCoordinator{
     
     func presentListCountriesScene(from navigation: UINavigationController){
         
-        guard let nextViewController = CountriesListRouter.make() else {
+        guard let nextViewController = CountriesListCoordinator.make() else {
             return
         }
         navigation.pushViewController(nextViewController, animated: true)
