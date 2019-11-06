@@ -25,9 +25,17 @@ final class CountriesListViewController: UIViewController {
         interactor.presenter = CountriesListPresenter()
         interactor.presenter?.viewController = self
         
-        self.tableView.dataSource = self
+        interactor.presenter?.delegate = self
+        interactor.delegate = interactor.presenter
         
-        interactor.reloadCountries(segmented: segControl.selectedSegmentIndex)
+        self.tableView.dataSource = self
+        self.tableView.delegate = self
+        
+        reloadCountries()
+    }
+    
+    func reloadCountries(){
+        interactor.reloadCountries(segmentedIndex: segControl.selectedSegmentIndex)
     }
     
     
@@ -46,6 +54,22 @@ extension CountriesListViewController : UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountriesListCell") as! CountriesListTableViewCell
         cell.render(viewModel: viewModels[indexPath.row])
         return cell
+    }
+}
+
+extension CountriesListViewController : UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 83
+    }
+}
+
+extension CountriesListViewController : CountriesListPresenterDelegate{
+    func didOrderCountries() {
+        //
+    }
+    
+    func didReloadCountries() {
+        tableView.reloadData()
     }
     
     

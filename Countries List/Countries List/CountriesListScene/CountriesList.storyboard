@@ -26,13 +26,12 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f8l-Tw-Ik1">
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="f8l-Tw-Ik1">
                                                     <rect key="frame" x="20" y="11" width="374" height="63"/>
                                                     <subviews>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oB2-vA-JrR">
                                                             <rect key="frame" x="0.0" y="0.0" width="85" height="63"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="HGl-eY-IwA"/>
                                                                 <constraint firstAttribute="width" constant="85" id="uek-Vv-wfV"/>
                                                             </constraints>
                                                         </imageView>
@@ -46,10 +45,10 @@
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="trailing" secondItem="i7b-M6-cZL" secondAttribute="trailingMargin" constant="20" id="BEh-yc-sUk"/>
-                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="bottom" secondItem="i7b-M6-cZL" secondAttribute="bottomMargin" constant="20" id="JaP-4v-45H"/>
-                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="leading" secondItem="i7b-M6-cZL" secondAttribute="leadingMargin" constant="20" id="Sra-5T-QBf"/>
-                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="top" secondItem="i7b-M6-cZL" secondAttribute="topMargin" constant="20" id="b2F-9x-c6u"/>
+                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="trailing" secondItem="i7b-M6-cZL" secondAttribute="trailingMargin" id="BEh-yc-sUk"/>
+                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="bottom" secondItem="i7b-M6-cZL" secondAttribute="bottomMargin" id="JaP-4v-45H"/>
+                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="leading" secondItem="i7b-M6-cZL" secondAttribute="leadingMargin" id="Sra-5T-QBf"/>
+                                                <constraint firstItem="f8l-Tw-Ik1" firstAttribute="top" secondItem="i7b-M6-cZL" secondAttribute="topMargin" id="b2F-9x-c6u"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>

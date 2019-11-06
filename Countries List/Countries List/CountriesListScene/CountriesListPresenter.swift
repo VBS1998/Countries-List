@@ -4,7 +4,7 @@
 // TODO: Remove this Sourcery mark above
 import UIKit
 
-protocol CountriesListPresenterDelegate {
+protocol CountriesListPresenterDelegate : AnyObject{
     func didReloadCountries()
     func didOrderCountries()
 }
@@ -13,38 +13,32 @@ final class CountriesListPresenter{
 
     weak var viewController : CountriesListViewController?
     
-    //weak var delegate : CountriesListPresenterDelegate?
+    weak var delegate : CountriesListPresenterDelegate?
     
     var numberOfCountries: Int {
         return viewController?.interactor?.countries.count ?? 0
     }
     
-    func present(_ countries : [Country], segmented: Int){
+    func present(_ countries : [Country],_ descriptions : [String]){
         var viewModels : [CountriesListViewModel] = []
-        for country in countries{
-            viewModels.append(CountriesListViewModel(imageName: country.name, description: descriptionFor(country: country, segmented: segmented)))
+        for (row,country) in countries.enumerated(){
+            viewModels.append(CountriesListViewModel(imageName: country.name, description: descriptions[row]))
         }
         
         viewController?.viewModels = viewModels
-        //delegate?.didReloadCountries()
-        //TODO: DELEGATE
-        viewController?.tableView.reloadData()
-    }
-    
-    func descriptionFor(country: Country, segmented: Int) -> String {
-        
-        return segmented == 0 ? country.name : String(country.hdi)
+        delegate?.didReloadCountries()
     }
 
 }
 
 extension CountriesListPresenter: CountriesListInteractorDelegate {
     func didReloadCountries() {
-        //self.delegate?.didReloadCountries()
+        self.delegate?.didReloadCountries()
     }
     
     func didOrderCountries() {
-        //gdag
+        viewController?.reloadCountries()
+        self.delegate?.didOrderCountries()
     }
     
 }

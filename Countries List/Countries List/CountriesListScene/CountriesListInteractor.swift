@@ -1,7 +1,3 @@
-// Generated using Sourcery 0.17.0 — https://github.com/krzysztofzablocki/Sourcery
-// DO NOT EDIT
-
-// TODO: Remove this Sourcery mark above
 import UIKit
 
 protocol CountriesListInteractorDelegate : AnyObject{
@@ -32,8 +28,9 @@ final class CountriesListInteractor{
     var presenter : CountriesListPresenter?
     
     init(countries: [Country] = [], dataFlow: CountriesListDataFlowProtocol) {
-        self.countries = countries
+        self.countries = CountriesProvider.provide(10) //Mock
         self.dataFlow = dataFlow
+        
     }
     
     func orderCountries(accordingTo segmentedIndex: Int) {
@@ -52,17 +49,15 @@ final class CountriesListInteractor{
         return Segmented.allCases.map { $0.stringValue }
     }
 
-//    func descriptionFor(row: Int, segmentedIndex: Int) -> String {
-//        guard let segmented = Segmented(rawValue: segmentedIndex) else {
-//            return ""
-//        }
-//        return segmented == .names ? countries[row].name : String(countries[row].hdi)
-//    }
+    func descriptionFor(country: Country, segmentedIndex: Int) -> String {
+        guard let segmented = Segmented(rawValue: segmentedIndex) else {
+            return ""
+        }
+        return segmented == .names ? country.name : String(country.hdi)
+    }
 
-    func reloadCountries(segmented : Int) {
-        countries = CountriesProvider.provide(10)
-        //TODO: Segmented com .names
-        presenter?.present(countries, segmented: segmented)
+    func reloadCountries(segmentedIndex : Int) {
+        presenter?.present(countries, countries.map({self.descriptionFor(country: $0, segmentedIndex: segmentedIndex)}))
         delegate?.didReloadCountries()
     }
 
